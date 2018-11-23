@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_about"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gzdefine.huangcuangoa.activity.AboutActivity"
+    android:orientation="vertical">
+    <include  android:id="@+id/layout_bar" layout="@layout/layout_title"/>
+    <ImageView
+        android:layout_marginTop="@dimen/x35"
+        android:layout_marginBottom="@dimen/x35"
+        android:layout_marginLeft="@dimen/x35"
+        android:layout_marginRight="@dimen/x35"
+        android:layout_gravity="center"
+        android:src="@mipmap/login_logo"
+        android:layout_width="130dp"
+        android:layout_height="130dp" />
+
+    <TextView
+        android:id="@+id/version"
+        android:textSize="16sp"
+        android:gravity="center_vertical"
+        android:typeface="monospace"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_marginTop="15dp"
+        android:drawablePadding="10dp"
+        android:text="软件版本：  1.0.5.0  (Android)"/>
+    <View
+        android:background="@color/black2"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip" />
+    <TextView
+        android:textSize="16sp"
+        android:gravity="center_vertical"
+        
+        android:typeface="monospace"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:drawablePadding="10dp"
+        android:text="主办单位：  河南潢川经济开发区大别山大数据中心"/>
+    <View
+        android:background="@color/black2"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip" />
+    <TextView
+        android:textSize="16sp"
+        android:gravity="center_vertical"
+        android:typeface="monospace"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:drawablePadding="10dp"
+        android:text="技术支持：  广州鼎义计算机有限公司"/>
+    <View
+        android:background="@color/black2"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip" />
+    <TextView
+        android:id="@+id/wy"
+        android:textSize="16sp"
+        android:gravity="center_vertical"
+        android:typeface="monospace"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:drawablePadding="10dp"
+        android:enabled="true"
+        android:textIsSelectable="true"
+        android:focusable="true"
+        android:longClickable="true"
+        android:text="网站网址：   oa.dbsdata.com.cn:8088/login.jsp"/>
+    <View
+        android:background="@color/black2"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip" />
+
+    <TextView
+       android:id="@+id/phone"
+        android:textSize="16sp"
+        android:gravity="center_vertical"
+        android:typeface="monospace"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:drawablePadding="10dp"
+        android:text="客服电话：  15839799596"/>
+    <View
+        android:background="@color/black2"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip" />
+
+</LinearLayout>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_setting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gzdefine.huangcuangoa.activity.SettingActivity"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/layout_bar"
+        layout="@layout/layout_title" />
+    <LinearLayout
+        android:background="@drawable/setting_item_selector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:textSize="16sp"
+            android:gravity="center_vertical"
+            android:background="@drawable/setting_item_selector"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:drawablePadding="10dp"
+            android:text="标题" />
+
+        <EditText
+            android:id="@+id/title"
+            android:hint="请输入标题"
+            android:textSize="16sp"
+            android:gravity="left|center_vertical"
+            android:background="@drawable/setting_item_selector"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:drawablePadding="10dp"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:background="@color/black2"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip" />
+    <LinearLayout
+        android:background="@drawable/setting_item_selector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:textSize="16sp"
+            android:gravity="center_vertical"
+            android:background="@drawable/setting_item_selector"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:drawablePadding="10dp"
+            android:text="起始时间" />
+
+        <Button
+            android:id="@+id/start_time"
+            android:hint="请选择起始时间"
+            android:textSize="16sp"
+            android:gravity="left|center_vertical"
+            android:background="@drawable/setting_item_selector"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:drawablePadding="10dp"
+            android:drawableRight="@mipmap/right_to"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:background="@color/black2"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip" />
+    <LinearLayout
+        android:background="@drawable/setting_item_selector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:textSize="16sp"
+            android:gravity="center_vertical"
+            android:background="@drawable/setting_item_selector"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:drawablePadding="10dp"
+            android:text="结束时间" />
+
+        <Button
+            android:id="@+id/end_time"
+            android:hint="请选择结束时间"
+            android:textSize="16sp"
+            android:gravity="left|center_vertical"
+            android:background="@drawable/setting_item_selector"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:drawablePadding="10dp"
+            android:drawableRight="@mipmap/right_to"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:background="@color/black2"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip" />
+    <LinearLayout
+        android:background="@drawable/setting_item_selector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:textSize="16sp"
+            android:gravity="center_vertical"
+            android:background="@drawable/setting_item_selector"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:drawablePadding="10dp"
+            android:text="任务状态" />
+
+        <Button
+            android:id="@+id/status"
+            android:hint="请选择任务状态"
+            android:textSize="16sp"
+            android:gravity="left|center_vertical"
+            android:background="@drawable/setting_item_selector"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:drawablePadding="10dp"
+            android:drawableRight="@mipmap/right_to"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:background="@color/black2"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip" />
+    <LinearLayout
+        android:background="@drawable/setting_item_selector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/content"
+            android:hint="  请输入内容...."
+            android:textSize="16sp"
+            android:gravity="left"
+            android:background="@drawable/setting_item_selector"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:paddingTop="8dp"
+            android:paddingLeft="3dp"
+            android:paddingRight="16dp"
+            android:drawablePadding="10dp"
+            />
+
+    </LinearLayout>
+    <View
+        android:background="@color/black2"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip" />
+    <Button
+        android:id="@+id/update_userinfo"
+        android:textColor="@color/colorF"
+        android:layout_marginLeft="@dimen/x95"
+        android:layout_marginRight="@dimen/x95"
+        android:textSize="@dimen/font_18dp"
+        android:text="修改"
+        android:layout_marginTop="@dimen/y25"
+        android:background="@drawable/button_selector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+</LinearLayout>
+

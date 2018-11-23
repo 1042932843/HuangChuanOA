@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_meeting_info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.gzdefine.huangcuangoa.activity.MeetingInfoActivity">
+    <include android:id="@+id/layout_bar" layout="@layout/layout_title"/>
+
+
+
+    <RelativeLayout
+        android:layout_margin="@dimen/y30"
+        android:background="@color/mark_yellow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/icon_pin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/title"
+                android:textSize="@dimen/font_16dp"
+                android:layout_marginTop="@dimen/y20"
+                android:textColor="@color/color3"
+                android:textStyle="bold"
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/start_time"
+                android:layout_marginTop="@dimen/y20"
+                android:textColor="@color/color3"
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/end_time"
+                android:layout_marginTop="@dimen/y20"
+                android:textColor="@color/color3"
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/status"
+                android:layout_marginTop="@dimen/y20"
+                android:textColor="@color/color3"
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <!--<TextView-->
+                <!--android:id="@+id/fqr"-->
+                <!--android:layout_marginTop="@dimen/y20"-->
+                <!--android:textColor="@color/color3"-->
+                <!--android:text="发起人：张雪"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content" />-->
+            <!--<TextView-->
+                <!--android:id="@+id/lxr"-->
+                <!--android:layout_marginTop="@dimen/y20"-->
+                <!--android:textColor="@color/color3"-->
+                <!--android:text="联系人：王武"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_marginBottom="@dimen/y20"-->
+                <!--android:layout_height="wrap_content" />-->
+            <TextView
+                android:layout_marginTop="@dimen/y20"
+                android:textColor="@color/color3"
+                android:text="内容："
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/content"
+                android:textColor="@color/color3"
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_marginBottom="@dimen/y20"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

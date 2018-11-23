@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical">
+	<TextView
+		android:textSize="@dimen/font_20dp"
+		android:textColor="@color/color0"
+		android:id="@+id/txt_title"
+		android:layout_width="match_parent"
+		android:layout_height="45dp"
+		android:background="@drawable/titlepop_item_selector"
+		android:text="@string/app_name" />
+	 
+</LinearLayout>

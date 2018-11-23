@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_kao_qin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.gzdefine.huangcuangoa.activity.KaoQinActivity">
+
+    <include
+        android:id="@+id/tit"
+        layout="@layout/layout_title" />
+
+    <TextView
+        android:id="@+id/tv_address"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y65"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="#707070"
+        android:drawableLeft="@mipmap/icon_map_maker"
+        android:gravity="center_vertical"
+        android:text=""
+        android:textColor="@color/colorF"
+        android:textSize="@dimen/font_14dp" />
+
+    <ScrollView
+        android:layout_below="@+id/tit"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorF">
+
+                    <com.gzdefine.huangcuangoa.view.CircleImageView
+                        android:id="@+id/user_head"
+                        android:layout_width="@dimen/x120"
+                        android:layout_height="@dimen/x120"
+                        android:layout_margin="@dimen/x20"
+                        android:src="@mipmap/default_photo" />
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/x60"
+                        android:layout_marginTop="@dimen/x20"
+                        android:layout_toRightOf="@+id/user_head"
+                        android:text=""
+                        android:textColor="@color/color0"
+                        android:textSize="@dimen/x40" />
+
+                    <TextView
+                        android:id="@+id/data"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/x60"
+                        android:layout_below="@+id/name"
+                        android:layout_toRightOf="@+id/user_head"
+                        android:text=""
+                        android:textSize="@dimen/x40" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y4"
+                    android:background="@color/blackk"></View>
+
+                <RelativeLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:id="@+id/signInLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:gravity="center">
+
+                        <RelativeLayout
+                            android:id="@+id/re_signIn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+
+                            <TextView
+                                android:id="@+id/morning"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/Circle11"
+                                android:layout_marginTop="20dp"
+                                android:gravity="center"
+                                android:textSize="18dp" />
+
+
+                            <LinearLayout
+                                android:id="@+id/Circle11"
+                                android:layout_width="120dp"
+                                android:layout_height="120dp"
+                                android:layout_centerHorizontal="true"
+                                android:background="@drawable/list_frame_background"
+                                android:gravity="center">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+
+                                    <TextView
+                                        android:id="@+id/tv_signIn"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_marginBottom="10dp"
+                                        android:layout_marginTop="@dimen/y50"
+                                        android:text="签到"
+                                        android:textColor="@color/colorF"
+                                        android:textSize="@dimen/font_20dp" />
+
+                                    <TextView
+                                        android:id="@+id/tv_time1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/tv_signIn"
+                                        android:layout_centerInParent="true"
+                                        android:text=""
+                                        android:textColor="@color/colorF"
+                                        android:textSize="@dimen/font_16dp" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/re_signIn1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/re_signIn"
+                            android:layout_marginTop="40dp">
+
+
+                            <TextView
+                                android:id="@+id/afternoon"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/Circle12"
+                                android:layout_marginTop="20dp"
+                                android:gravity="center"
+                                android:textSize="18dp" />
+
+
+                            <LinearLayout
+                                android:id="@+id/Circle12"
+                                android:layout_width="120dp"
+                                android:layout_height="120dp"
+                                android:layout_centerHorizontal="true"
+                                android:background="@drawable/list_frame_background2"
+                                android:gravity="center">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+
+                                    <TextView
+                                        android:id="@+id/tv_signIn1"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerHorizontal="true"
+                                        android:layout_marginBottom="10dp"
+                                        android:layout_marginTop="@dimen/y50"
+                                        android:text="签到"
+                                        android:textColor="@color/colorF"
+                                        android:textSize="@dimen/font_20dp" />
+
+                                    <TextView
+                                        android:id="@+id/tv_time3"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_below="@+id/tv_signIn1"
+                                        android:layout_centerInParent="true"
+                                        android:text=""
+                                        android:textColor="@color/colorF"
+                                        android:textSize="@dimen/font_16dp" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/signInLayout"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/y60"
+                        android:paddingTop="@dimen/y60"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            android:id="@+id/re_signOut"
+                            android:layout_width="@dimen/x250"
+                            android:layout_height="@dimen/x250">
+
+                            <com.gzdefine.huangcuangoa.view.CircleImageView
+                                android:id="@+id/Circle22"
+                                android:layout_width="@dimen/x250"
+                                android:layout_height="@dimen/x250"
+                                android:layout_centerInParent="true"
+                                android:src="@color/red5" />
+
+                            <com.gzdefine.huangcuangoa.view.CircleImageView
+                                android:id="@+id/Circle2"
+                                android:layout_width="@dimen/x230"
+                                android:layout_height="@dimen/x230"
+                                android:layout_centerInParent="true"
+                                android:src="@color/red7" />
+
+                            <TextView
+                                android:id="@+id/tv_signOut"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="@dimen/y60"
+                                android:text="签退"
+                                android:textColor="@color/colorF"
+                                android:textSize="@dimen/font_24dp" />
+
+                            <TextView
+                                android:id="@+id/tv_time2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/tv_signOut"
+                                android:layout_centerInParent="true"
+                                android:text=""
+                                android:textColor="@color/colorF"
+                                android:textSize="@dimen/font_16dp" />
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

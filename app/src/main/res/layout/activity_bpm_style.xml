@@ -1,0 +1,80 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title"/>
+    <RelativeLayout
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#fffffbfa"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp">
+
+        <com.gzdefine.huangcuangoa.view.CustomEditText
+            android:id="@+id/school_friend_member_search_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/bg_search_input"
+            android:drawableLeft="@mipmap/ic_search"
+            android:drawablePadding="5dp"
+            android:drawableRight="@mipmap/ic_edit_text_delbtn"
+            android:freezesText="true"
+            android:gravity="center_vertical"
+            android:hint="搜索"
+            android:imeOptions="actionSearch"
+            android:paddingBottom="2dp"
+            android:paddingTop="2dp"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:textColorHint="#ffb5b5b5"
+            android:textSize="14sp"/>
+    </RelativeLayout>
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/colorF"
+        app:tabIndicatorColor="@color/windowBackground"
+        app:tabIndicatorHeight="3dp"
+        app:tabSelectedTextColor="@color/windowBackground"
+        app:tabTextAppearance="@style/MyTabLayoutTextAppearance"
+        app:tabTextColor="@color/color6"
+        />
+    <!--<android.support.design.widget.TabLayout-->
+    <!--android:id="@+id/tab_FindFragment_title"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:background="@color/titleBlue"-->
+    <!--app:tabIndicatorColor="@color/white"-->
+    <!--app:tabSelectedTextColor="@color/gray"-->
+    <!--app:tabTextColor="@color/white"-->
+    <!--/>-->
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/text"
+        android:textSize="18dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="暂无新建流程"
+        />
+        <ListView
+            android:id="@+id/school_friend_member"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@drawable/bg_cut_line"
+            android:dividerHeight="1px"
+            />
+
+
+
+</LinearLayout>

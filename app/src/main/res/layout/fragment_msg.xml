@@ -1,0 +1,593 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dots="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:minHeight="50dp"
+        android:padding="5dp"
+        android:singleLine="true">
+
+        <RelativeLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:id="@+id/linearLayout">
+
+                <TextView
+                    android:text="正在查询"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/primary_text_light"
+                    android:textSize="20sp" />
+
+                <com.gzdefine.huangcuangoa.view.DotsTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/dots"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/primary_text_light"
+                    dots:autoplay="false"
+                    dots:period="1000"/>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/hn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:text=""
+                    android:textSize="13dp" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/baitian"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="白天 "
+                            android:textSize="13dp"
+                            android:visibility="gone" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/baitian_img"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:background="@mipmap/ic_search"
+                                android:gravity="center"
+                                android:visibility="gone" />
+
+                            <TextView
+                                android:id="@+id/baitian_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/baitian_img"
+                                android:gravity="center"
+                                android:text="" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/wanshang"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="晚上 "
+                            android:textSize="13dp"
+                            android:visibility="gone" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:id="@+id/wanshang_img"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:background="@mipmap/ic_search"
+                                android:visibility="gone" />
+
+                            <TextView
+                                android:id="@+id/wanshang_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/baitian_img"
+                                android:gravity="center"
+                                android:text="" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/wendu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text=""
+                    android:textSize="13dp" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/richeng_layout"
+        style="@style/MMListItem"
+        android:layout_height="65.0dip"
+        android:background="@color/white"
+        android:paddingLeft="12dip">
+
+        <RelativeLayout
+            android:layout_width="59dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="4dp">
+
+            <com.gzdefine.huangcuangoa.view.CircleImageView
+                android:id="@+id/img1"
+                android:layout_width="50.0dip"
+                android:layout_height="50.0dip"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/renwu" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/img1">
+
+                <!--
+                            <TextView
+                                android:id="@+id/richeng_time"
+                                style="@style/MMFontTitleInList"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginTop="10dp"
+                                android:gravity="top"
+                                android:singleLine="true"
+                                android:text="19:40"
+                                android:textSize="12sp"
+                                android:visibility="gone" />
+                -->
+
+                <TextView
+                    android:id="@+id/richeng_unread_msg_number"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_marginBottom="@dimen/y10"
+                    android:background="@drawable/aii"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:orientation="vertical"
+            android:paddingLeft="5dip">
+
+            <TextView
+                android:id="@+id/txt_name"
+                style="@style/MMFontTitleInList"
+                android:singleLine="true"
+                android:text="日程"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/richeng_content"
+                style="@style/MMFontTitleInList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_name"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/txt_state"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:text="暂无新消息"
+                android:textColor="@color/black1"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black2" />
+
+    <LinearLayout
+        android:id="@+id/youjian_layout"
+        style="@style/MMListItem"
+        android:layout_height="65.0dip"
+        android:background="@color/white"
+        android:paddingLeft="12dip">
+
+        <RelativeLayout
+            android:layout_width="59dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="4dp">
+
+            <com.gzdefine.huangcuangoa.view.CircleImageView
+                android:id="@+id/img2"
+                android:layout_width="50.0dip"
+                android:layout_height="50.0dip"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/youjian" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/img2">
+
+                <TextView
+                    android:id="@+id/youjian_time"
+                    style="@style/MMFontTitleInList"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="top"
+                    android:singleLine="true"
+                    android:text="19:40"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/youjian_unread_msg_number"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@drawable/aii"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:orientation="vertical"
+            android:paddingLeft="5dip">
+
+            <TextView
+                android:id="@+id/txt_name2"
+                style="@style/MMFontTitleInList"
+                android:singleLine="true"
+                android:text="邮件"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/youjian_content"
+                style="@style/MMFontTitleInList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_name2"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/txt_state"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:text="暂无新消息"
+                android:textColor="@color/black1"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black2" />
+
+    <LinearLayout
+        android:id="@+id/huiyi_layout"
+        style="@style/MMListItem"
+        android:layout_height="65.0dip"
+        android:background="@color/white"
+        android:paddingLeft="12dip">
+
+        <RelativeLayout
+            android:layout_width="59dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="4dp">
+
+            <com.gzdefine.huangcuangoa.view.CircleImageView
+                android:id="@+id/img3"
+                android:layout_width="50.0dip"
+                android:layout_height="50.0dip"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/shenpi" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/img3">
+
+                <TextView
+                    android:id="@+id/huiyi_time"
+                    style="@style/MMFontTitleInList"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="top"
+                    android:singleLine="true"
+                    android:text="19:40"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/huiyi_unread_msg_number"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@drawable/aii"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:orientation="vertical"
+            android:paddingLeft="5dip">
+
+            <TextView
+                android:id="@+id/txt_name3"
+                style="@style/MMFontTitleInList"
+                android:singleLine="true"
+                android:text="会议"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/huiyi_content"
+                style="@style/MMFontTitleInList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_name3"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/txt_state"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:text="暂无新消息"
+                android:textColor="@color/black1"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black2" />
+
+    <LinearLayout
+        android:id="@+id/liucheng_layout"
+        style="@style/MMListItem"
+        android:layout_height="65.0dip"
+        android:background="@color/white"
+        android:paddingLeft="12dip">
+
+        <RelativeLayout
+            android:layout_width="59dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="4dp">
+
+            <com.gzdefine.huangcuangoa.view.CircleImageView
+                android:id="@+id/img"
+                android:layout_width="50.0dip"
+                android:layout_height="50.0dip"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/liucheng" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/img">
+
+                <TextView
+                    android:id="@+id/liucheng_unread_msg_number"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_marginBottom="@dimen/y10"
+                    android:background="@drawable/aii"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:orientation="vertical"
+            android:paddingLeft="5dip">
+
+            <TextView
+                android:id="@+id/txt_name4"
+                style="@style/MMFontTitleInList"
+                android:singleLine="true"
+                android:text="待办"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/liucheng_content"
+                style="@style/MMFontTitleInList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_name4"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/txt_state"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:text="暂无新消息"
+                android:textColor="@color/black1"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black2" />
+
+    <LinearLayout
+        android:id="@+id/kaoqin_layout"
+        style="@style/MMListItem"
+        android:layout_height="65.0dip"
+        android:background="@color/white"
+        android:paddingLeft="12dip">
+
+        <RelativeLayout
+            android:layout_width="59dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="4dp">
+
+            <com.gzdefine.huangcuangoa.view.CircleImageView
+                android:id="@+id/img8"
+                android:layout_width="50.0dip"
+                android:layout_height="50.0dip"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/dt" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/img8">
+
+                <TextView
+                    android:id="@+id/kaoqin_unread_msg_number"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_marginBottom="@dimen/y10"
+                    android:background="@drawable/aii"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:orientation="vertical"
+            android:paddingLeft="5dip">
+
+            <TextView
+                android:id="@+id/txt_name5"
+                style="@style/MMFontTitleInList"
+                android:singleLine="true"
+                android:text="考勤"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/kaoqin_content"
+                style="@style/MMFontTitleInList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_name5"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/txt_state"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:text="暂无新消息"
+                android:textColor="@color/black1"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black2" />
+</LinearLayout>

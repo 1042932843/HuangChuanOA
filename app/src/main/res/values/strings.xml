@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">潢开区OA</string>
+    <string name="fileProvider">com.gzdefine.huangcuangoa.fileProvider</string>
+</resources>

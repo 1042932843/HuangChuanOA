@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:orientation="vertical">
+	<com.gzdefine.huangcuangoa.view.swipe.SwipeLayout
+		android:id="@+id/swipe"
+		app:drag_edge="right"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+			<LinearLayout
+				android:id="@+id/txt_del"
+				android:background="#EB4A4E"
+				android:gravity="center"
+				android:layout_width="80dp"
+				android:layout_height="65.0dip">
+				<TextView
+					style="@style/MMFontTitleInList"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="流程作废"
+					android:textColor="@color/white"
+					android:textSize="18sp"
+					android:singleLine="true" />
+			</LinearLayout>
+	<LinearLayout
+		android:id="@+id/contactitem_layout"
+		style="@style/MMListItem"
+		android:layout_height="65.0dip"
+		android:background="@color/white"
+		android:paddingLeft="12dip">
+			<RelativeLayout
+			android:id="@+id/avatar_container"
+			android:layout_width="59dp"
+			android:layout_marginTop="4dp"
+			android:layout_height="match_parent"
+			android:layout_alignParentLeft="true">
+			<com.gzdefine.huangcuangoa.view.CircleImageView
+				android:id="@+id/contactitem_avatar_iv"
+				android:layout_width="50.0dip"
+				android:layout_height="50.0dip"
+				android:src="@mipmap/head" />
+
+		</RelativeLayout>
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1.0"
+			android:orientation="vertical"
+			android:paddingLeft="5dip">
+			<TextView
+				android:text="111111111"
+				android:id="@+id/txt_content"
+				style="@style/MMFontTitleInList"
+				android:textColor="@color/black"
+				android:singleLine="true" />
+			<TextView
+				android:text="11111111"
+				android:id="@+id/txt_time"
+				style="@style/MMFontTitleInList"
+				android:layout_below="@+id/txt_name"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="5dp"
+				android:textSize="14sp"
+				android:textColor="@color/black1"
+				android:singleLine="true" />
+		</LinearLayout>
+		<RelativeLayout
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent">
+			<TextView
+				android:id="@+id/txt_state"
+				android:text="RUNNING"
+				style="@style/MMFontTitleInList"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="10dp"
+				android:layout_marginRight="10dp"
+				android:layout_centerInParent="true"
+				android:textSize="12sp"
+				android:textColor="@color/windowBackground"
+				android:singleLine="true" />
+		</RelativeLayout>
+
+
+	</LinearLayout>
+
+	</com.gzdefine.huangcuangoa.view.swipe.SwipeLayout>
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="1dp"
+		android:background="@color/black2" />
+</LinearLayout>

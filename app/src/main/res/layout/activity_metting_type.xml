@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <include layout="@layout/layout_title"/>
+
+    <TextView
+        android:textColor="#000"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:text="请选择会议类型"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/type_has"
+        android:textColor="@color/colorF"
+        android:layout_marginLeft="@dimen/x95"
+        android:layout_marginRight="@dimen/x95"
+        android:textSize="@dimen/font_18dp"
+        android:text="已发布的会议"
+        android:layout_marginTop="@dimen/y45"
+        android:background="@drawable/button_selector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/type_none"
+        android:textColor="@color/colorF"
+        android:layout_marginLeft="@dimen/x95"
+        android:layout_marginRight="@dimen/x95"
+        android:textSize="@dimen/font_18dp"
+        android:text="未发布的会议（可编辑修改）"
+        android:layout_marginTop="@dimen/y60"
+        android:background="@drawable/button_selector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+
+</LinearLayout>

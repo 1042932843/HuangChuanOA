@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_setting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gzdefine.huangcuangoa.activity.SettingActivity"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/layout_bar"
+        layout="@layout/layout_title" />
+    <LinearLayout
+        android:background="@drawable/setting_item_selector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:textSize="16sp"
+            android:gravity="center_vertical"
+            android:background="@drawable/setting_item_selector"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:drawablePadding="10dp"
+            android:text="用户名" />
+        <EditText
+            android:id="@+id/user_name"
+            android:hint="请输入用户名"
+            android:textSize="16sp"
+            android:gravity="right|center_vertical"
+            android:background="@drawable/setting_item_selector"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:drawablePadding="10dp"
+             />
+
+    </LinearLayout>
+
+    <View
+        android:background="@color/black2"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip" />
+    <LinearLayout
+        android:background="@drawable/setting_item_selector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:textSize="16sp"
+            android:gravity="center_vertical"
+            android:background="@drawable/setting_item_selector"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:drawablePadding="10dp"
+            android:text="性  别" />
+        <Button
+            android:id="@+id/fale"
+            android:hint="请输入性别"
+            android:textSize="16sp"
+            android:gravity="right|center_vertical"
+            android:background="@drawable/setting_item_selector"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:drawablePadding="10dp"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:background="@color/black2"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip" /><LinearLayout
+    android:background="@drawable/setting_item_selector"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView
+        android:textSize="16sp"
+        android:gravity="center_vertical"
+        android:background="@drawable/setting_item_selector"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:drawablePadding="10dp"
+        android:text="部门" />
+    <EditText
+        android:focusable="false"
+        android:editable="false"
+        android:id="@+id/depart"
+        android:hint="请输入部门"
+        android:textSize="16sp"
+        android:gravity="right|center_vertical"
+        android:background="@drawable/setting_item_selector"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:drawablePadding="10dp"
+        />
+
+</LinearLayout>
+
+    <View
+        android:background="@color/black2"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip" /><LinearLayout
+    android:background="@drawable/setting_item_selector"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView
+        android:textSize="16sp"
+        android:gravity="center_vertical"
+        android:background="@drawable/setting_item_selector"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:drawablePadding="10dp"
+        android:text="手机号" />
+
+    <EditText
+        android:id="@+id/phone"
+        android:hint="请输入手机号"
+        android:textSize="16sp"
+        android:gravity="right|center_vertical"
+        android:background="@drawable/setting_item_selector"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:drawablePadding="10dp"
+        />
+
+</LinearLayout>
+
+    <View
+        android:background="@color/black2"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip" /><LinearLayout
+    android:background="@drawable/setting_item_selector"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView
+        android:textSize="16sp"
+        android:gravity="center_vertical"
+        android:background="@drawable/setting_item_selector"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:drawablePadding="10dp"
+        android:text="身份证号" />
+    <EditText
+        android:id="@+id/idcard"
+        android:hint="请输入身份证号"
+        android:textSize="16sp"
+        android:gravity="right|center_vertical"
+        android:background="@drawable/setting_item_selector"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:drawablePadding="10dp"
+        />
+
+</LinearLayout>
+
+    <View
+        android:background="@color/black2"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip" /><LinearLayout
+    android:background="@drawable/setting_item_selector"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView
+        android:textSize="16sp"
+        android:gravity="center_vertical"
+        android:background="@drawable/setting_item_selector"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:drawablePadding="10dp"
+        android:text="Email" />
+    <EditText
+        android:id="@+id/email"
+        android:hint="请输入Email"
+        android:textSize="16sp"
+        android:gravity="right|center_vertical"
+        android:background="@drawable/setting_item_selector"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:drawablePadding="10dp"
+        />
+
+</LinearLayout>
+
+    <View
+        android:background="@color/black2"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip" />
+    <LinearLayout
+    android:background="@drawable/setting_item_selector"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView
+        android:textSize="16sp"
+        android:gravity="center_vertical"
+        android:background="@drawable/setting_item_selector"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:drawablePadding="10dp"
+        android:text="QQ" />
+    <EditText
+        android:id="@+id/qq"
+        android:hint="请输入QQ"
+        android:textSize="16sp"
+        android:gravity="right|center_vertical"
+        android:background="@drawable/setting_item_selector"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:drawablePadding="10dp"
+        />
+
+</LinearLayout>
+    <View
+        android:background="@color/black2"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip" />
+    <LinearLayout
+        android:background="@drawable/setting_item_selector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:textSize="16sp"
+            android:gravity="center_vertical"
+            android:background="@drawable/setting_item_selector"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:drawablePadding="10dp"
+            android:text="紧急联系人" />
+        <EditText
+            android:id="@+id/jjlxr"
+            android:hint="请输入紧急联系人"
+            android:textSize="16sp"
+            android:gravity="right|center_vertical"
+            android:background="@drawable/setting_item_selector"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:drawablePadding="10dp"
+            />
+
+    </LinearLayout>
+    <View
+        android:background="@color/black2"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip" />
+    <LinearLayout
+        android:background="@drawable/setting_item_selector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:textSize="16sp"
+            android:gravity="center_vertical"
+            android:background="@drawable/setting_item_selector"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:drawablePadding="10dp"
+            android:text="紧急联系人电话" />
+        <EditText
+            android:id="@+id/jjlxrdh"
+            android:hint="请输入紧急联系人电话"
+            android:textSize="16sp"
+            android:gravity="right|center_vertical"
+            android:background="@drawable/setting_item_selector"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:drawablePadding="10dp"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/update_userinfo"
+        android:textColor="@color/colorF"
+        android:layout_marginLeft="@dimen/x95"
+        android:layout_marginRight="@dimen/x95"
+        android:textSize="@dimen/font_18dp"
+        android:text="确认修改"
+        android:layout_marginTop="@dimen/y25"
+        android:background="@drawable/button_selector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>
+

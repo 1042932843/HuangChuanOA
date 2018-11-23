@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_update_password"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:background="@color/white0"
+    tools:context="com.gzdefine.huangcuangoa.activity.UpdatePasswordActivity">
+
+    <include
+        android:id="@+id/layout_bar"
+        layout="@layout/layout_title" />
+
+    <LinearLayout
+        android:background="@color/colorF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/x250"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="16dp"
+            android:text="手机号"
+            android:textColor="@color/color3"
+            android:textSize="@dimen/font_16dp" />
+
+        <EditText
+            android:inputType="phone"
+            android:id="@+id/et_phone"
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入手机号"
+            android:padding="16dp"
+            android:textSize="@dimen/font_16dp" />
+
+    </LinearLayout>
+    <View
+        android:background="@color/black5"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dp" />
+    <LinearLayout
+        android:background="@color/colorF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/x250"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="16dp"
+            android:text="验证码"
+            android:textColor="@color/color3"
+            android:textSize="@dimen/font_16dp" />
+
+        <EditText
+            android:inputType="text"
+            android:id="@+id/et_yzm"
+            android:background="@null"
+            android:layout_width="@dimen/x350"
+            android:layout_height="wrap_content"
+            android:hint="请输入验证码"
+            android:padding="16dp"
+            android:textSize="@dimen/font_16dp" />
+
+        <Button
+            android:textColor="@color/colorF"
+            android:background="@drawable/button_selector"
+            android:textSize="14sp"
+            android:text="获取验证码"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/y70"
+            />
+    </LinearLayout>
+    <View
+        android:background="@color/black5"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dp" />
+    <LinearLayout
+        android:background="@color/colorF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/x250"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="16dp"
+            android:text="登录密码"
+            android:textColor="@color/color3"
+            android:textSize="@dimen/font_16dp" />
+
+        <EditText
+            android:inputType="textPassword"
+            android:id="@+id/et_password"
+            android:background="@null"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="请输入登陆密码"
+            android:padding="16dp"
+            android:textSize="@dimen/font_16dp" />
+    </LinearLayout>
+    <View
+        android:background="@color/black5"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dp" />
+
+
+    <Button
+        android:id="@+id/register"
+        android:textColor="@color/colorF"
+        android:layout_marginLeft="@dimen/x95"
+        android:layout_marginRight="@dimen/x95"
+        android:textSize="@dimen/font_18dp"
+        android:text="注          册"
+        android:layout_marginTop="@dimen/y25"
+        android:background="@drawable/button_selector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
